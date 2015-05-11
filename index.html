@@ -1,0 +1,95 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+<meta name="viewport" content="initial-scale=1, maximum-scale=1,user-scalable=no"/>
+<link type="text/css" href="http://js.arcgis.com/3.13/dijit/themes/nihilo/nihilo.css" rel="stylesheet">
+<link type='text/css' href='http://js.arcgis.com/3.13/esri/css/esri.css' rel='stylesheet'>
+<link type='text/css' href='//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css' rel='stylesheet'>
+<link type='text/css' href='//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css' rel='stylesheet'>
+<style type="text/css">
+.widget-tool-container {
+  padding: 6px;
+  margin: auto;
+  cursor: pointer;
+  height: 32px;
+  width: 32px;
+}
+.widget-tool-container a {
+  color: #4C4C4C;
+}
+.widget-tool-container:hover {
+  background-color: #eee;
+}
+.widget-basemaps {
+  position: fixed;
+  bottom: 10px;
+  left: 60px;
+  background-color: #fff;
+  padding: .5em;
+  border: 1px solid #57585A;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+}
+.widget-basemaps .esriBasemapGallery {
+  width: 210px;
+}
+.widget-basemaps .esriBasemapGallery .esriBasemapGalleryNode {
+  width: 50px;
+  font-size: 0.7em;
+}
+.esriBasemapGalleryThumbnail {
+  height: 32px;
+  width: 50px;
+}
+.esriBasemapGallerySelectedNode .esriBasemapGalleryThumbnail {
+  border: 1px solid #F99;
+  margin: 1px !important;
+}
+.esriMeasurement {
+  z-index: 99;
+  position: fixed;
+  top: 20px;
+  left: 60px;
+  background-color: #fff;
+  max-width: 300px;
+  max-height: 170px;
+  padding: .5em;
+  border: 1px solid #57585A;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+}
+#widget-basemap-node {
+  z-index: 99;
+  position: fixed;
+  bottom: 10px;
+  left: 20px;
+}
+#widget-measurement-node {
+  z-index: 99;
+  position: fixed;
+  top: 120px;
+  left: 20px;
+}
+html, body, #map {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+</style>
+<title>Esri Modular Sample</title>
+</head>
+<body class="nihilo">
+  <div id="widget-basemap-node"></div>
+  <div id="widget-measurement-node"></div>
+  <div id="map"></div>
+  <script type="text/javascript" src="//js.arcgis.com/3.13compact"></script>
+  <script src="js/run.js"></script>
+</body>
+</html>
